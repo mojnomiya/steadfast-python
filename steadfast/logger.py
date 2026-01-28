@@ -47,7 +47,7 @@ def sanitize_log_message(message: str) -> str:
 
     # Remove authorization headers
     message = re.sub(
-        r'authorization["\']?\s*[:=]\s*["\']?[a-zA-Z0-9_-]+["\']?',
+        r'authorization["\']?\s*[:=]\s*["\']?[a-zA-Z0-9_\s-]+["\']?',
         "authorization=***",
         message,
         flags=re.IGNORECASE,
