@@ -10,13 +10,14 @@
 ### From PyPI (Recommended)
 
 ```bash
-pip install steadfast
+pip install steadfast-python
 ```
 
+<!--
 ### From Source
 
 ```bash
-git clone https://github.com/steadfast/steadfast-python.git
+git clone https://github.com/mojnomiya/steadfast-python.git
 cd steadfast-python
 pip install -e .
 ```
@@ -24,7 +25,7 @@ pip install -e .
 ### Development Installation
 
 ```bash
-git clone https://github.com/steadfast/steadfast-python.git
+git clone https://github.com/mojnomiya/steadfast-python.git
 cd steadfast-python
 
 # Create virtual environment
@@ -37,6 +38,7 @@ pip install -r requirements-dev.txt
 # Install pre-commit hooks
 pre-commit install
 ```
+-->
 
 ## Verification
 
@@ -84,7 +86,7 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install package
-pip install steadfast
+pip install steadfast-python
 
 # Deactivate when done
 deactivate
@@ -100,7 +102,7 @@ conda create -n steadfast python=3.9
 conda activate steadfast
 
 # Install package
-pip install steadfast
+pip install steadfast-python
 
 # Deactivate when done
 conda deactivate
@@ -121,7 +123,7 @@ These are automatically installed with the package.
 
 **Solution:**
 ```bash
-pip install steadfast
+pip install steadfast-python
 ```
 
 ### "ImportError: cannot import name 'SteadastClient'"
@@ -129,10 +131,10 @@ pip install steadfast
 **Solution:**
 ```bash
 # Verify installation
-pip show steadfast
+pip show steadfast-python
 
 # Reinstall if needed
-pip install --upgrade steadfast
+pip install --upgrade steadfast-python
 ```
 
 ### Virtual Environment Issues
@@ -149,7 +151,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install package
-pip install steadfast
+pip install steadfast-python
 ```
 
 ## Upgrading
@@ -157,19 +159,19 @@ pip install steadfast
 ### Upgrade to Latest Version
 
 ```bash
-pip install --upgrade steadfast
+pip install --upgrade steadfast-python
 ```
 
 ### Upgrade to Specific Version
 
 ```bash
-pip install steadfast==0.2.0
+pip install steadfast-python==0.2.0
 ```
 
 ### Check Installed Version
 
 ```bash
-pip show steadfast
+pip show steadfast-python
 ```
 
 Or in Python:
@@ -182,7 +184,7 @@ print(steadfast.__version__)
 ## Uninstallation
 
 ```bash
-pip uninstall steadfast
+pip uninstall steadfast-python
 ```
 
 ## Next Steps

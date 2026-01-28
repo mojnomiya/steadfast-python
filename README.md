@@ -1,5 +1,12 @@
 # Steadfast Courier Python SDK
 
+[![Tests](https://github.com/mojnomiya/steadfast-python/workflows/Tests/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions)
+[![Publish](https://github.com/mojnomiya/steadfast-python/workflows/Publish/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions)
+[![PyPI version](https://badge.fury.io/py/steadfast-python.svg)](https://badge.fury.io/py/steadfast-python)
+[![Python versions](https://img.shields.io/pypi/pyversions/steadfast-python.svg)](https://pypi.org/project/steadfast-python/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Documentation](https://readthedocs.org/projects/steadfast-python/badge/?version=latest)](https://steadfast-python.readthedocs.io/)
+
 A Python SDK for the Steadfast Courier API that provides easy-to-use interfaces for order management, tracking, and other courier services.
 
 ## Features
@@ -16,7 +23,7 @@ A Python SDK for the Steadfast Courier API that provides easy-to-use interfaces 
 ## Installation
 
 ```bash
-pip install steadfast
+pip install steadfast-python
 ```
 
 ## Quick Start
