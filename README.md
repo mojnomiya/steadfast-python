@@ -1,7 +1,7 @@
 # Steadfast Courier Python SDK
 
-[![Tests](https://github.com/mojnomiya/steadfast-python/workflows/Tests/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions)
-[![Publish](https://github.com/mojnomiya/steadfast-python/workflows/Publish/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions)
+[![Tests](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml)
+[![Publish](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml)
 [![PyPI version](https://badge.fury.io/py/steadfast-python.svg)](https://badge.fury.io/py/steadfast-python)
 [![Python versions](https://img.shields.io/pypi/pyversions/steadfast-python.svg)](https://pypi.org/project/steadfast-python/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
