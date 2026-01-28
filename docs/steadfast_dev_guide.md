@@ -216,8 +216,8 @@ Create `steadfast/http_client.py`:
 ```python
 class HTTPClient:
     """Wrapper around requests library with retry logic."""
-    
-    def __init__(self, base_url: str, timeout: int = 30, 
+
+    def __init__(self, base_url: str, timeout: int = 30,
                  max_retries: int = 3, retry_backoff: float = 0.3)
     def get(self, endpoint: str, headers: dict = None, params: dict = None) -> dict
     def post(self, endpoint: str, headers: dict = None, data: dict = None) -> dict
@@ -300,7 +300,7 @@ Create `steadfast/modules/return_request.py`:
 ```python
 class ReturnRequestModule:
     def __init__(self, http_client: HTTPClient)
-    def create(self, identifier: str, identifier_type: str = "consignment_id", 
+    def create(self, identifier: str, identifier_type: str = "consignment_id",
                reason: str = None) -> ReturnRequest
     def get(self, return_request_id: int) -> ReturnRequest
     def list(self) -> ReturnRequestList
@@ -350,9 +350,9 @@ Create `steadfast/client.py`:
 ```python
 class SteadastClient:
     def __init__(self, api_key: str = None, secret_key: str = None,
-                 timeout: int = 30, max_retries: int = 3, 
+                 timeout: int = 30, max_retries: int = 3,
                  retry_backoff: float = 0.3)
-    
+
     @property
     def orders(self) -> OrderModule
     @property
@@ -365,7 +365,7 @@ class SteadastClient:
     def payments(self) -> PaymentModule
     @property
     def locations(self) -> LocationModule
-    
+
     def _load_credentials_from_env(self) -> dict
     def _validate_credentials(self) -> None
     def _initialize_modules(self) -> None
@@ -431,13 +431,13 @@ def test_create_order_success(mock_http_client):
         # ... other fields
     }
     mock_http_client.post.return_value = expected_response
-    
+
     result = module.create(
         invoice="ORD-001",
         recipient_name="John Smith",
         # ... other params
     )
-    
+
     assert result.consignment_id == 1424107
     mock_http_client.post.assert_called_once()
 ```
@@ -493,7 +493,7 @@ jobs:
     strategy:
       matrix:
         python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
-    
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
@@ -598,20 +598,20 @@ python -m build
 class ModuleClass:
     def __init__(self, http_client: HTTPClient):
         self.http_client = http_client
-    
+
     def method_name(self, param: Type) -> ReturnType:
         # Validate input
         validated_param = validate_param(param)
-        
+
         # Prepare payload
         payload = {"key": validated_param}
-        
+
         # Make API call
         response = self.http_client.post(
             "/endpoint",
             data=payload
         )
-        
+
         # Parse response
         return ModelClass.from_dict(response)
 ```

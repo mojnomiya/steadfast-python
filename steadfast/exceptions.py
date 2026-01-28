@@ -29,9 +29,7 @@ class ValidationError(SteadfastException):
 
     def __str__(self) -> str:
         if self.field:
-            return (
-                f"Validation error for field '{self.field}': {self.message}"
-            )
+            return f"Validation error for field '{self.field}': " f"{self.message}"
         return f"Validation error: {self.message}"
 
 
@@ -64,8 +62,7 @@ class NetworkError(SteadfastException):
     def __str__(self) -> str:
         if self.retry_after:
             return (
-                f"Network error: {self.message} "
-                f"(retry after {self.retry_after}s)"
+                f"Network error: {self.message} " f"(retry after {self.retry_after}s)"
             )
         return f"Network error: {self.message}"
 

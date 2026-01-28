@@ -1,9 +1,9 @@
 # Software Requirements Specification (SRS)
 ## Steadfast Courier Python SDK
 
-**Document Version:** 1.0  
-**Date:** January 2026  
-**Author:** Development Team  
+**Document Version:** 1.0
+**Date:** January 2026
+**Author:** Development Team
 **Status:** Draft
 
 ---

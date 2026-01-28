@@ -1,6 +1,6 @@
 # Steadfast Courier Python SDK - API Documentation
 
-**Version:** 1.0.0  
+**Version:** 1.0.0
 **Last Updated:** January 2026
 
 ---
@@ -121,7 +121,7 @@ client = SteadastClient()  # Reads from .env
 class SteadastClient:
     """
     Main client class for Steadfast Courier API interactions.
-    
+
     Handles authentication and delegates operations to specific modules.
     """
 ```
@@ -777,17 +777,17 @@ try:
         delivery_type=0,
         note="Call before delivery"
     )
-    
+
     print(f"✓ Order created!")
     print(f"  Consignment ID: {order.consignment_id}")
     print(f"  Tracking Code: {order.tracking_code}")
-    
+
     # Check status
     status = client.tracking.get_status_by_consignment_id(
         order.consignment_id
     )
     print(f"  Current Status: {status.delivery_status}")
-    
+
 except SteadfastException as e:
     print(f"✗ Error: {e}")
 ```

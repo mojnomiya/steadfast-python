@@ -191,9 +191,7 @@ class TestPaymentDetails:
     def test_payment_details(self) -> None:
         """Test PaymentDetails instantiation."""
         consignments = [{"consignment_id": 123, "amount": 100.0}]
-        payment_details = PaymentDetails(
-            id=1, amount=500.0, consignments=consignments
-        )
+        payment_details = PaymentDetails(id=1, amount=500.0, consignments=consignments)
         assert payment_details.id == 1
         assert payment_details.amount == 500.0
         assert len(payment_details.consignments) == 1

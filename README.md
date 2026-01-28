@@ -43,6 +43,54 @@ order = client.orders.create(
 print(f"Order created: {order.consignment_id}")
 ```
 
+## Development
+
+### Setup
+
+```bash
+# Clone repository
+git clone <repository-url>
+cd steadfast-python
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install development dependencies
+pip install -r requirements-dev.txt
+
+# Install pre-commit hooks
+pre-commit install
+```
+
+### Code Quality
+
+This project uses automated code quality checks with pre-commit hooks:
+
+- **Black**: Code formatting
+- **Flake8**: Linting
+- **MyPy**: Type checking
+- **Pytest**: Testing
+
+Run quality checks manually:
+```bash
+# Run all checks
+pre-commit run --all-files
+
+# Or use the convenience script
+./scripts/quality-check.sh
+```
+
+### Testing
+
+```bash
+# Run tests
+pytest tests/ -v
+
+# Run with coverage
+pytest tests/ --cov=steadfast --cov-report=html
+```
+
 ## Requirements
 
 - Python 3.8+

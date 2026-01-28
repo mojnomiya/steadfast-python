@@ -125,10 +125,7 @@ class TestValidateEmail:
     def test_valid_email(self) -> None:
         """Test valid email formats."""
         assert validate_email("test@example.com") == "test@example.com"
-        assert (
-            validate_email("user.name@domain.co.uk")
-            == "user.name@domain.co.uk"
-        )
+        assert validate_email("user.name@domain.co.uk") == "user.name@domain.co.uk"
 
     def test_invalid_email_empty(self) -> None:
         """Test empty email raises ValidationError."""

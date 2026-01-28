@@ -5,3 +5,4 @@ pytest-mock>=3.10
 black>=22.0
 flake8>=4.0
 mypy>=0.990
+pre-commit>=3.0

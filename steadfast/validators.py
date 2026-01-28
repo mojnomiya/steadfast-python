@@ -28,9 +28,7 @@ def validate_phone(value: str) -> str:
     phone = re.sub(r"\D", "", value)  # Remove non-digits
 
     if len(phone) != 11:
-        raise ValidationError(
-            "Phone number must be exactly 11 digits", "phone"
-        )
+        raise ValidationError("Phone number must be exactly 11 digits", "phone")
 
     return phone
 
@@ -38,9 +36,7 @@ def validate_phone(value: str) -> str:
 def validate_recipient_name(value: str) -> str:
     """Validate recipient name: max 100 characters."""
     if not value or not isinstance(value, str):
-        raise ValidationError(
-            "Recipient name cannot be empty", "recipient_name"
-        )
+        raise ValidationError("Recipient name cannot be empty", "recipient_name")
 
     name = value.strip()
     if len(name) > 100:
@@ -58,9 +54,7 @@ def validate_address(value: str) -> str:
 
     address = value.strip()
     if len(address) > 250:
-        raise ValidationError(
-            "Address cannot exceed 250 characters", "address"
-        )
+        raise ValidationError("Address cannot exceed 250 characters", "address")
 
     return address
 
