@@ -298,30 +298,27 @@
 
 ## Phase 10: Main Client Class
 
-- [ ] **client.py**
-  - [ ] SteadastClient class
-  - [ ] __init__() method
-    - [ ] Load credentials from parameters or .env
-    - [ ] Validate credentials
-    - [ ] Initialize HTTPClient
-  - [ ] Module properties
-    - [ ] @property orders
-    - [ ] @property tracking
-    - [ ] @property balance
-    - [ ] @property returns
-    - [ ] @property payments
-    - [ ] @property locations
-  - [ ] _load_credentials_from_env()
-  - [ ] _validate_credentials()
-  - [ ] _initialize_modules()
-  - [ ] _get_base_url()
+- [x] **client.py**
+  - [x] SteadastClient class
+  - [x] __init__() method
+    - [x] Load credentials from parameters or .env
+    - [x] Validate credentials
+    - [x] Initialize HTTPClient
+  - [x] Module properties
+    - [x] @property orders
+    - [x] @property tracking
+    - [x] @property balance
+    - [x] @property returns
+    - [x] @property payments
+    - [x] @property locations
+  - [x] _validate_credentials()
 
 **Tests:**
-- [ ] Client initialization with params
-- [ ] Client initialization with .env
-- [ ] Missing credentials error
-- [ ] Module property access
-- [ ] Credential validation
+- [x] Client initialization with params
+- [x] Client initialization with .env
+- [x] Missing credentials error
+- [x] Module property access
+- [x] Credential validation
 
 ---
 
