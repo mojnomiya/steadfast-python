@@ -422,17 +422,18 @@ All examples are runnable and well-documented.
 
 ## Phase 16: CI/CD Setup
 
-- [ ] **.github/workflows/tests.yml**
-  - [ ] Test on Python 3.8-3.12
-  - [ ] Run linting
-  - [ ] Run type checking
-  - [ ] Run tests with coverage
-  - [ ] Upload coverage
+- [x] **.github/workflows/tests.yml**
+  - [x] Test on Python 3.8-3.12
+  - [x] Test on Ubuntu, macOS, Windows
+  - [x] Run linting (Black, Flake8)
+  - [x] Run type checking (MyPy)
+  - [x] Run tests with coverage
+  - [x] Upload coverage to Codecov
 
-- [ ] **.github/workflows/publish.yml**
-  - [ ] Triggered on release
-  - [ ] Build package
-  - [ ] Publish to PyPI
+- [x] **.github/workflows/publish.yml**
+  - [x] Triggered on release
+  - [x] Build package
+  - [x] Publish to PyPI
 
 ---
 
