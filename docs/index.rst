@@ -7,19 +7,18 @@ A Python SDK for the Steadfast Courier API that provides easy-to-use interfaces 
    :maxdepth: 2
    :caption: Getting Started
 
-   installation
-   authentication
-   Quick Start <STEADFAST_QUICK_START>
+   Installation <installation>
+   Authentication <authentication>
 
 .. toctree::
    :maxdepth: 2
    :caption: User Guide
 
-   order_management
-   order_tracking
-   balance_management
-   return_requests
-   payments
+   Order Management <order_management>
+   Order Tracking <order_tracking>
+   Balance Management <balance_management>
+   Return Requests <return_requests>
+   Payments <payments>
 
 .. toctree::
    :maxdepth: 2
@@ -31,16 +30,8 @@ A Python SDK for the Steadfast Courier API that provides easy-to-use interfaces 
    :maxdepth: 2
    :caption: Advanced
 
-   error_handling
+   Error Handling <error_handling>
    Development Guide <steadfast_dev_guide>
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Additional
-
-   Contributing <../CONTRIBUTING>
-   Code of Conduct <../CODE_OF_CONDUCT>
-   Changelog <../CHANGELOG>
 
 Indices and tables
 ==================
