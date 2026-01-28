@@ -183,31 +183,31 @@
 
 ## Phase 5: Tracking Module
 
-- [ ] **modules/tracking.py**
-  - [ ] TrackingModule class
-  - [ ] get_status_by_consignment_id()
-    - [ ] Validate consignment_id (positive integer)
-    - [ ] Make GET request
-    - [ ] Parse response
-    - [ ] Return OrderStatus
-  - [ ] get_status_by_invoice()
-    - [ ] Validate invoice format
-    - [ ] Make GET request
-    - [ ] Parse response
-    - [ ] Return OrderStatus
-  - [ ] get_status_by_tracking_code()
-    - [ ] Validate tracking_code
-    - [ ] Make GET request
-    - [ ] Parse response
-    - [ ] Return OrderStatus
+- [x] **modules/tracking.py**
+  - [x] TrackingModule class
+  - [x] get_status_by_consignment_id()
+    - [x] Validate consignment_id (positive integer)
+    - [x] Make GET request
+    - [x] Parse response
+    - [x] Return OrderStatus
+  - [x] get_status_by_invoice()
+    - [x] Validate invoice format
+    - [x] Make GET request
+    - [x] Parse response
+    - [x] Return OrderStatus
+  - [x] get_status_by_tracking_code()
+    - [x] Validate tracking_code
+    - [x] Make GET request
+    - [x] Parse response
+    - [x] Return OrderStatus
 
 **Tests:**
-- [ ] Get status by consignment ID
-- [ ] Get status by invoice
-- [ ] Get status by tracking code
-- [ ] Not found errors
-- [ ] API errors
-- [ ] Invalid input validation
+- [x] Get status by consignment ID
+- [x] Get status by invoice
+- [x] Get status by tracking code
+- [x] Not found errors
+- [x] API errors
+- [x] Invalid input validation
 
 ---
 
