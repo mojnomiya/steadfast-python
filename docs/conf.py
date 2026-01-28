@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath(".."))
 project = "Steadfast Courier Python SDK"
 copyright = "2026, Md Mojno Miya"
 author = "Md Mojno Miya"
-release = "0.2.0"
+release = "0.3.0"
 
 extensions = [
     "sphinx.ext.autodoc",

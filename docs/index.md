@@ -249,6 +249,6 @@ MIT License - See LICENSE file for details
 
 ## Version
 
-Current version: 0.2.0
+Current version: 0.3.0
 
 See [CHANGELOG](../CHANGELOG.md) for version history.
