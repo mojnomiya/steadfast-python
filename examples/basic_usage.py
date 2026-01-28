@@ -1,9 +1,16 @@
 """Basic usage example of Steadfast SDK."""
 
-from steadfast import SteadastClient
+import os
+from dotenv import load_dotenv
+from steadfast import SteadfastClient
+
+load_dotenv()
 
 # Initialize client
-client = SteadastClient(api_key="your_api_key", secret_key="your_secret_key")
+client = SteadfastClient(
+    api_key=os.getenv("STEADFAST_API_KEY"),
+    secret_key=os.getenv("STEADFAST_SECRET_KEY"),
+)
 
 # Check balance
 balance = client.balance.get_current_balance()

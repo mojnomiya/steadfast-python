@@ -42,9 +42,9 @@ def create(
 
 **Example:**
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )
@@ -127,9 +127,9 @@ for result in response.results:
 ## Error Handling
 
 ```python
-from steadfast import SteadastClient, ValidationError, APIError, NetworkError
+from steadfast import SteadfastClient, ValidationError, APIError, NetworkError
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 try:
     order = client.orders.create(

@@ -45,7 +45,7 @@ pre-commit install
 Verify installation:
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 print("Steadfast SDK installed successfully!")
 ```
@@ -53,10 +53,10 @@ print("Steadfast SDK installed successfully!")
 ## Quick Start
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 # Initialize client
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )
@@ -126,7 +126,7 @@ These are automatically installed with the package.
 pip install steadfast-python
 ```
 
-### "ImportError: cannot import name 'SteadastClient'"
+### "ImportError: cannot import name 'SteadfastClient'"
 
 **Solution:**
 ```bash

@@ -3,7 +3,7 @@
 import time
 
 from steadfast import (
-    SteadastClient,
+    SteadfastClient,
     ValidationError,
     NotFoundError,
     APIError,
@@ -11,7 +11,7 @@ from steadfast import (
     Order,
 )
 
-client = SteadastClient(api_key="your_api_key", secret_key="your_secret_key")
+client = SteadfastClient(api_key="your_api_key", secret_key="your_secret_key")
 
 # Example 1: Validation error
 print("Example 1: Validation Error")

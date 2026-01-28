@@ -114,7 +114,7 @@ from steadfast import ConfigurationError
 
 try:
     # Missing API key
-    client = SteadastClient(secret_key="secret")
+    client = SteadfastClient(secret_key="secret")
 except ConfigurationError as e:
     print(f"Configuration error: {e}")
 ```
@@ -124,9 +124,9 @@ except ConfigurationError as e:
 ### Basic Try-Catch
 
 ```python
-from steadfast import SteadastClient, ValidationError, APIError, NetworkError
+from steadfast import SteadfastClient, ValidationError, APIError, NetworkError
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 try:
     order = client.orders.create(
@@ -150,9 +150,9 @@ except NetworkError as e:
 
 ```python
 import time
-from steadfast import SteadastClient, NetworkError
+from steadfast import SteadfastClient, NetworkError
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 def create_order_with_retry(max_retries: int = 3):
     for attempt in range(max_retries):
@@ -181,7 +181,7 @@ order = create_order_with_retry()
 
 ```python
 from steadfast import (
-    SteadastClient,
+    SteadfastClient,
     ValidationError,
     NotFoundError,
     AuthenticationError,
@@ -189,7 +189,7 @@ from steadfast import (
     NetworkError,
 )
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 try:
     status = client.tracking.get_status_by_consignment_id(123)
@@ -213,9 +213,9 @@ except NetworkError as e:
 ### Bulk Operation Error Handling
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 orders = [
     {
@@ -263,10 +263,10 @@ except Exception as e:
 ### Invalid Credentials
 
 ```python
-from steadfast import SteadastClient, ConfigurationError
+from steadfast import SteadfastClient, ConfigurationError
 
 try:
-    client = SteadastClient()  # No credentials provided
+    client = SteadfastClient()  # No credentials provided
 except ConfigurationError as e:
     print(f"Error: {e}")
     # Solution: Provide api_key and secret_key or set environment variables

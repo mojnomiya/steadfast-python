@@ -1,8 +1,8 @@
 """Bulk orders example."""
 
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="your_api_key", secret_key="your_secret_key")
+client = SteadfastClient(api_key="your_api_key", secret_key="your_secret_key")
 
 # Prepare bulk orders
 orders = [

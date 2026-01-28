@@ -68,7 +68,7 @@ Detailed checklist with:
 
 ### Module Structure
 ```
-SteadastClient
+SteadfastClient
 ├── orders (OrderModule)
 ├── tracking (TrackingModule)
 ├── balance (BalanceModule)

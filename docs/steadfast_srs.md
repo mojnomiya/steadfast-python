@@ -395,18 +395,18 @@ steadfast-python/
 from steadfast import SteadfastClient
 
 # Initialize with credentials
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )
 
 # Or with .env file
-client = SteadastClient()  # Reads from .env
+client = SteadfastClient()  # Reads from .env
 ```
 
 ### 7.2 Core Classes
 
-#### SteadastClient
+#### SteadfastClient
 Main entry point for all SDK operations.
 
 #### Module Classes

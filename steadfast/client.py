@@ -12,7 +12,7 @@ from .modules.location import LocationModule
 from .exceptions import ConfigurationError
 
 
-class SteadastClient:
+class SteadfastClient:
     """Main client for Steadfast Courier API."""
 
     def __init__(

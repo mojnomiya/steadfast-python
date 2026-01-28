@@ -72,10 +72,10 @@ pip install -e .
 ### Basic Usage
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 # Initialize the client
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )
@@ -106,19 +106,19 @@ STEADFAST_SECRET_KEY=your_secret_key
 Then initialize without parameters:
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient()  # Reads from .env
+client = SteadfastClient()  # Reads from .env
 ```
 
 ---
 
 ## Authentication
 
-### SteadastClient Class
+### SteadfastClient Class
 
 ```python
-class SteadastClient:
+class SteadfastClient:
     """
     Main client class for Steadfast Courier API interactions.
 
@@ -152,7 +152,7 @@ def __init__(
 **Example:**
 
 ```python
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key",
     timeout=30
@@ -757,11 +757,11 @@ except NetworkError as e:
 ### Example 1: Complete Order Workflow
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 from steadfast.exceptions import SteadfastException
 
 # Initialize
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )
@@ -795,9 +795,9 @@ except SteadfastException as e:
 ### Example 2: Bulk Order Creation
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient()
+client = SteadfastClient()
 
 orders = [
     {
@@ -830,9 +830,9 @@ print(f"\nTotal: {success_count} successful, {error_count} failed")
 ### Example 3: Track Multiple Orders
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient()
+client = SteadfastClient()
 
 invoices = ["ORDER-001", "ORDER-002", "ORDER-003"]
 
@@ -847,9 +847,9 @@ for invoice in invoices:
 ### Example 4: Return Management
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient()
+client = SteadfastClient()
 
 # Create return request
 return_req = client.returns.create(

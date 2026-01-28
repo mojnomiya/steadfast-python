@@ -2,9 +2,9 @@
 
 import time
 
-from steadfast import SteadastClient, NotFoundError
+from steadfast import SteadfastClient, NotFoundError
 
-client = SteadastClient(api_key="your_api_key", secret_key="your_secret_key")
+client = SteadfastClient(api_key="your_api_key", secret_key="your_secret_key")
 
 # Track by consignment ID
 try:

@@ -35,9 +35,9 @@ def create(
 
 **Example:**
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 # Create return by consignment ID
 return_req = client.returns.create(
@@ -126,9 +126,9 @@ for return_req in return_list.data:
 ## Error Handling
 
 ```python
-from steadfast import SteadastClient, ValidationError, NotFoundError, APIError
+from steadfast import SteadfastClient, ValidationError, NotFoundError, APIError
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 try:
     return_req = client.returns.create(
@@ -150,9 +150,9 @@ except APIError as e:
 ### Create return and track status
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 # Create return request
 return_req = client.returns.create(

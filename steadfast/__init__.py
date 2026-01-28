@@ -1,6 +1,6 @@
 """Steadfast Courier Python SDK."""
 
-from .client import SteadastClient
+from .client import SteadfastClient
 from .exceptions import (
     SteadfastException,
     AuthenticationError,
@@ -28,7 +28,7 @@ from .models import (
 __version__ = "0.2.0"
 
 __all__ = [
-    "SteadastClient",
+    "SteadfastClient",
     "SteadfastException",
     "AuthenticationError",
     "ValidationError",

@@ -1,7 +1,7 @@
 # Steadfast Courier Python SDK
 
-[![Tests](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml)
-[![Publish](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml)
+<!-- [![Tests](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml)
+[![Publish](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml) -->
 [![PyPI version](https://badge.fury.io/py/steadfast-python.svg)](https://badge.fury.io/py/steadfast-python)
 [![Python versions](https://img.shields.io/pypi/pyversions/steadfast-python.svg)](https://pypi.org/project/steadfast-python/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -29,10 +29,10 @@ pip install steadfast-python
 ## Quick Start
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 # Initialize client
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )

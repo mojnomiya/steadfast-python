@@ -29,9 +29,9 @@ def get_status_by_consignment_id(consignment_id: int) -> OrderStatus
 
 **Example:**
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 status = client.tracking.get_status_by_consignment_id(123)
 print(f"Status: {status.delivery_status}")
@@ -108,9 +108,9 @@ Common delivery status values:
 ## Error Handling
 
 ```python
-from steadfast import SteadastClient, ValidationError, NotFoundError, APIError
+from steadfast import SteadfastClient, ValidationError, NotFoundError, APIError
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 try:
     status = client.tracking.get_status_by_consignment_id(123)
@@ -127,9 +127,9 @@ except APIError as e:
 
 ```python
 import time
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 def wait_for_delivery(consignment_id: int, max_attempts: int = 10):
     for attempt in range(max_attempts):

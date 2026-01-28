@@ -41,9 +41,9 @@ STEADFAST_SECRET_KEY=your_secret_key
 ### 3. Initialize Client
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )
@@ -147,7 +147,7 @@ The SDK provides specific exceptions for different error scenarios:
 
 ```python
 from steadfast import (
-    SteadastClient,
+    SteadfastClient,
     ValidationError,
     NotFoundError,
     AuthenticationError,
@@ -174,9 +174,9 @@ except NetworkError as e:
 ### Create Order and Track
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 # Create order
 order = client.orders.create(
@@ -249,6 +249,6 @@ MIT License - See LICENSE file for details
 
 ## Version
 
-Current version: 0.1.0
+Current version: 0.2.0
 
 See [CHANGELOG](../CHANGELOG.md) for version history.

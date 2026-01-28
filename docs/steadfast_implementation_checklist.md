@@ -299,7 +299,7 @@
 ## Phase 10: Main Client Class
 
 - [x] **client.py**
-  - [x] SteadastClient class
+  - [x] SteadfastClient class
   - [x] __init__() method
     - [x] Load credentials from parameters or .env
     - [x] Validate credentials
@@ -325,7 +325,7 @@
 ## Phase 11: Package Initialization
 
 - [x] **steadfast/__init__.py**
-  - [x] Import SteadastClient
+  - [x] Import SteadfastClient
   - [x] Import all exceptions
   - [x] Import all models
   - [x] Define __version__

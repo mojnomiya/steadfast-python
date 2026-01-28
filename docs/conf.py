@@ -5,7 +5,7 @@ from typing import List
 sys.path.insert(0, os.path.abspath(".."))
 
 project = "Steadfast Courier Python SDK"
-copyright = "2024, Md Mojno Miya"
+copyright = "2026, Md Mojno Miya"
 author = "Md Mojno Miya"
 release = "0.2.0"
 

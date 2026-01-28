@@ -348,7 +348,7 @@ Police station lookup for return handling.
 Create `steadfast/client.py`:
 
 ```python
-class SteadastClient:
+class SteadfastClient:
     def __init__(self, api_key: str = None, secret_key: str = None,
                  timeout: int = 30, max_retries: int = 3,
                  retry_backoff: float = 0.3)
@@ -384,7 +384,7 @@ Responsibilities:
 Create `steadfast/__init__.py`:
 
 ```python
-from steadfast.client import SteadastClient
+from steadfast.client import SteadfastClient
 from steadfast.exceptions import (
     SteadfastException,
     AuthenticationError,
@@ -397,7 +397,7 @@ from steadfast.exceptions import (
 
 __version__ = "0.1.0"
 __all__ = [
-    "SteadastClient",
+    "SteadfastClient",
     # ... exceptions
     # ... models
 ]

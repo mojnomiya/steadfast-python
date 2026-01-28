@@ -16,9 +16,9 @@ The Steadfast SDK uses API key and secret key authentication. Credentials can be
 ### Method 1: Direct Parameters
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key"
 )
@@ -36,9 +36,9 @@ export STEADFAST_SECRET_KEY="your_secret_key"
 Then initialize without parameters:
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient()
+client = SteadfastClient()
 ```
 
 ### Method 3: .env File
@@ -54,10 +54,10 @@ Load with python-dotenv:
 
 ```python
 from dotenv import load_dotenv
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 load_dotenv()
-client = SteadastClient()
+client = SteadfastClient()
 ```
 
 ## Configuration
@@ -65,9 +65,9 @@ client = SteadastClient()
 ### Custom Base URL
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(
+client = SteadfastClient(
     api_key="your_api_key",
     secret_key="your_secret_key",
     base_url="https://custom.api.com"
@@ -78,7 +78,7 @@ client = SteadastClient(
 
 ```python
 import os
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 env = os.getenv("ENVIRONMENT", "production")
 
@@ -87,7 +87,7 @@ if env == "development":
 else:
     base_url = "https://api.steadfast.io"
 
-client = SteadastClient(
+client = SteadfastClient(
     api_key=os.getenv("STEADFAST_API_KEY"),
     secret_key=os.getenv("STEADFAST_SECRET_KEY"),
     base_url=base_url
@@ -100,7 +100,7 @@ client = SteadastClient(
 
 ❌ **Bad:**
 ```python
-client = SteadastClient(
+client = SteadfastClient(
     api_key="abc123def456",
     secret_key="xyz789uvw012"
 )
@@ -109,9 +109,9 @@ client = SteadastClient(
 ✅ **Good:**
 ```python
 import os
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(
+client = SteadfastClient(
     api_key=os.getenv("STEADFAST_API_KEY"),
     secret_key=os.getenv("STEADFAST_SECRET_KEY")
 )
@@ -150,8 +150,8 @@ else:
     api_key = os.getenv("DEV_STEADFAST_API_KEY")
     secret_key = os.getenv("DEV_STEADFAST_SECRET_KEY")
 
-from steadfast import SteadastClient
-client = SteadastClient(api_key=api_key, secret_key=secret_key)
+from steadfast import SteadfastClient
+client = SteadfastClient(api_key=api_key, secret_key=secret_key)
 ```
 
 ### 5. Restrict Key Permissions
@@ -165,10 +165,10 @@ client = SteadastClient(api_key=api_key, secret_key=secret_key)
 ### Missing Credentials
 
 ```python
-from steadfast import SteadastClient, ConfigurationError
+from steadfast import SteadfastClient, ConfigurationError
 
 try:
-    client = SteadastClient()  # No credentials provided
+    client = SteadfastClient()  # No credentials provided
 except ConfigurationError as e:
     print(f"Configuration error: {e}")
     # Set STEADFAST_API_KEY and STEADFAST_SECRET_KEY environment variables
@@ -177,9 +177,9 @@ except ConfigurationError as e:
 ### Invalid Credentials
 
 ```python
-from steadfast import SteadastClient, AuthenticationError
+from steadfast import SteadfastClient, AuthenticationError
 
-client = SteadastClient(
+client = SteadfastClient(
     api_key="invalid_key",
     secret_key="invalid_secret"
 )
@@ -198,24 +198,24 @@ except AuthenticationError as e:
 ```python
 import os
 from unittest.mock import patch
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 # Mock environment variables
 with patch.dict(os.environ, {
     "STEADFAST_API_KEY": "test_key",
     "STEADFAST_SECRET_KEY": "test_secret"
 }):
-    client = SteadastClient()
+    client = SteadfastClient()
     # Use client for testing
 ```
 
 ### Using Test Credentials
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
 # Use test/sandbox credentials
-client = SteadastClient(
+client = SteadfastClient(
     api_key="test_api_key",
     secret_key="test_secret_key",
     base_url="https://sandbox.api.steadfast.io"
@@ -257,14 +257,14 @@ client = SteadastClient(
 ```python
 import os
 from dotenv import load_dotenv
-from steadfast import SteadastClient, ConfigurationError
+from steadfast import SteadfastClient, ConfigurationError
 
 # Load environment variables
 load_dotenv()
 
 try:
     # Initialize client
-    client = SteadastClient(
+    client = SteadfastClient(
         api_key=os.getenv("STEADFAST_API_KEY"),
         secret_key=os.getenv("STEADFAST_SECRET_KEY")
     )

@@ -1,8 +1,8 @@
 """Return management example."""
 
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="your_api_key", secret_key="your_secret_key")
+client = SteadfastClient(api_key="your_api_key", secret_key="your_secret_key")
 
 # Create return by consignment ID
 return_req = client.returns.create(

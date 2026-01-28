@@ -24,9 +24,9 @@ def get_current_balance() -> Balance
 
 **Example:**
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 balance = client.balance.get_current_balance()
 print(f"Current balance: {balance.current_balance}")
@@ -44,9 +44,9 @@ The Balance object contains:
 ## Error Handling
 
 ```python
-from steadfast import SteadastClient, APIError, NetworkError
+from steadfast import SteadfastClient, APIError, NetworkError
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 try:
     balance = client.balance.get_current_balance()
@@ -62,9 +62,9 @@ except NetworkError as e:
 ### Check balance before creating orders
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 balance = client.balance.get_current_balance()
 
@@ -86,9 +86,9 @@ else:
 
 ```python
 import time
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 def monitor_balance(interval: int = 3600):
     """Monitor balance every interval seconds (default 1 hour)"""

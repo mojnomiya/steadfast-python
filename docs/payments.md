@@ -24,9 +24,9 @@ def list() -> PaymentList
 
 **Example:**
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 payments = client.payments.list()
 
@@ -89,9 +89,9 @@ for consignment in payment.consignments:
 ## Error Handling
 
 ```python
-from steadfast import SteadastClient, ValidationError, NotFoundError, APIError
+from steadfast import SteadfastClient, ValidationError, NotFoundError, APIError
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 try:
     payment = client.payments.get(1)
@@ -109,9 +109,9 @@ except APIError as e:
 ### Get total payments
 
 ```python
-from steadfast import SteadastClient
+from steadfast import SteadfastClient
 
-client = SteadastClient(api_key="key", secret_key="secret")
+client = SteadfastClient(api_key="key", secret_key="secret")
 
 payments = client.payments.list()
 total = sum(p.amount for p in payments.data)
