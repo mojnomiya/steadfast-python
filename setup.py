@@ -10,6 +10,7 @@ setup(
     author_email="your.email@example.com",
     description="Python SDK for Steadfast Courier API",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
