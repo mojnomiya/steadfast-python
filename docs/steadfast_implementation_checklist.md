@@ -261,22 +261,22 @@
 
 ## Phase 8: Payment Module
 
-- [ ] **modules/payment.py**
-  - [ ] PaymentModule class
-  - [ ] list() method
-    - [ ] Make GET request
-    - [ ] Parse paginated response
-    - [ ] Return PaymentList
-  - [ ] get() method
-    - [ ] Validate payment_id
-    - [ ] Make GET request
-    - [ ] Return PaymentDetails with consignments
+- [x] **modules/payment.py**
+  - [x] PaymentModule class
+  - [x] list() method
+    - [x] Make GET request
+    - [x] Parse paginated response
+    - [x] Return PaymentList
+  - [x] get() method
+    - [x] Validate payment_id
+    - [x] Make GET request
+    - [x] Return PaymentDetails with consignments
 
 **Tests:**
-- [ ] List payments
-- [ ] Get payment details
-- [ ] Not found errors
-- [ ] Response parsing
+- [x] List payments
+- [x] Get payment details
+- [x] Not found errors
+- [x] Response parsing
 
 ---
 
