@@ -282,17 +282,17 @@
 
 ## Phase 9: Location Module
 
-- [ ] **modules/location.py**
-  - [ ] LocationModule class
-  - [ ] get_police_stations() method
-    - [ ] Make GET request
-    - [ ] Parse response
-    - [ ] Return PoliceStationList
+- [x] **modules/location.py**
+  - [x] LocationModule class
+  - [x] get_police_stations() method
+    - [x] Make GET request
+    - [x] Parse response
+    - [x] Return PoliceStationList
 
 **Tests:**
-- [ ] Get police stations
-- [ ] Response parsing
-- [ ] Error handling
+- [x] Get police stations
+- [x] Response parsing
+- [x] Error handling
 
 ---
 
