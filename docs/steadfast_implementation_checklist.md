@@ -230,32 +230,32 @@
 
 ## Phase 7: Return Request Module
 
-- [ ] **modules/return_request.py**
-  - [ ] ReturnRequestModule class
-  - [ ] create() method
-    - [ ] Validate identifier and identifier_type
-    - [ ] Support three identifier types (consignment_id, invoice, tracking_code)
-    - [ ] Accept optional reason
-    - [ ] Build payload
-    - [ ] Make POST request
-    - [ ] Parse response
-    - [ ] Return ReturnRequest
-  - [ ] get() method
-    - [ ] Validate return_request_id
-    - [ ] Make GET request
-    - [ ] Return ReturnRequest
-  - [ ] list() method
-    - [ ] Make GET request
-    - [ ] Parse paginated response
-    - [ ] Return ReturnRequestList
+- [x] **modules/return_request.py**
+  - [x] ReturnRequestModule class
+  - [x] create() method
+    - [x] Validate identifier and identifier_type
+    - [x] Support three identifier types (consignment_id, invoice, tracking_code)
+    - [x] Accept optional reason
+    - [x] Build payload
+    - [x] Make POST request
+    - [x] Parse response
+    - [x] Return ReturnRequest
+  - [x] get() method
+    - [x] Validate return_request_id
+    - [x] Make GET request
+    - [x] Return ReturnRequest
+  - [x] list() method
+    - [x] Make GET request
+    - [x] Parse paginated response
+    - [x] Return ReturnRequestList
 
 **Tests:**
-- [ ] Create return request
-- [ ] Get return request
-- [ ] List return requests
-- [ ] All identifier types
-- [ ] Not found errors
-- [ ] Validation errors
+- [x] Create return request
+- [x] Get return request
+- [x] List return requests
+- [x] All identifier types
+- [x] Not found errors
+- [x] Validation errors
 
 ---
 
