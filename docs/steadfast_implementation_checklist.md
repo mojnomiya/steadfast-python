@@ -147,37 +147,37 @@
 
 ## Phase 4: Order Module
 
-- [ ] **modules/order.py**
-  - [ ] OrderModule class with __init__
-  - [ ] create() method
-    - [ ] Validate invoice (unique format)
-    - [ ] Validate recipient_name (max 100 chars)
-    - [ ] Validate recipient_phone (11 digits)
-    - [ ] Validate recipient_address (max 250 chars)
-    - [ ] Validate cod_amount (>= 0)
-    - [ ] Validate delivery_type (0 or 1)
-    - [ ] Support optional fields
-    - [ ] Build payload
-    - [ ] Make API call
-    - [ ] Parse response
-    - [ ] Return Order object
-  - [ ] create_bulk() method
-    - [ ] Validate orders not empty
-    - [ ] Validate max 500 items
-    - [ ] Validate each order
-    - [ ] Build payload with orders array
-    - [ ] Make API call
-    - [ ] Handle partial failures
-    - [ ] Return BulkOrderResponse with individual results
+- [x] **modules/order.py**
+  - [x] OrderModule class with __init__
+  - [x] create() method
+    - [x] Validate invoice (unique format)
+    - [x] Validate recipient_name (max 100 chars)
+    - [x] Validate recipient_phone (11 digits)
+    - [x] Validate recipient_address (max 250 chars)
+    - [x] Validate cod_amount (>= 0)
+    - [x] Validate delivery_type (0 or 1)
+    - [x] Support optional fields
+    - [x] Build payload
+    - [x] Make API call
+    - [x] Parse response
+    - [x] Return Order object
+  - [x] create_bulk() method
+    - [x] Validate orders not empty
+    - [x] Validate max 500 items
+    - [x] Validate each order
+    - [x] Build payload with orders array
+    - [x] Make API call
+    - [x] Handle partial failures
+    - [x] Return BulkOrderResponse with individual results
 
 **Tests:**
-- [ ] Create single order success
-- [ ] Create bulk orders
-- [ ] Validation errors for all constraints
-- [ ] API errors
-- [ ] Invalid invoice format
-- [ ] Invalid phone format
-- [ ] Exceed 500 items in bulk
+- [x] Create single order success
+- [x] Create bulk orders
+- [x] Validation errors for all constraints
+- [x] API errors
+- [x] Invalid invoice format
+- [x] Invalid phone format
+- [x] Exceed 500 items in bulk
 
 ---
 
