@@ -213,18 +213,18 @@
 
 ## Phase 6: Balance Module
 
-- [ ] **modules/balance.py**
-  - [ ] BalanceModule class
-  - [ ] get_current_balance()
-    - [ ] Make GET request
-    - [ ] Parse response
-    - [ ] Return Balance object
-    - [ ] Handle errors
+- [x] **modules/balance.py**
+  - [x] BalanceModule class
+  - [x] get_current_balance()
+    - [x] Make GET request
+    - [x] Parse response
+    - [x] Return Balance object
+    - [x] Handle errors
 
 **Tests:**
-- [ ] Get balance success
-- [ ] API errors
-- [ ] Response parsing
+- [x] Get balance success
+- [x] API errors
+- [x] Response parsing
 
 ---
 
