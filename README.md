@@ -1,4 +1,5 @@
 # Steadfast Courier Python SDK
+![Steadfast Courier Python SDK Banner](steadfast.png)
 
 <!-- [![Tests](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/tests.yml)
 [![Publish](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml/badge.svg)](https://github.com/mojnomiya/steadfast-python/actions/workflows/publish.yml) -->

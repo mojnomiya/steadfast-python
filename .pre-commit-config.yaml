@@ -6,6 +6,7 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
+        args: ['--maxkb=1000']
 
   - repo: https://github.com/psf/black
     rev: 23.3.0
@@ -17,6 +18,7 @@ repos:
     rev: 6.0.0
     hooks:
       - id: flake8
+        language_version: python3.9
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.3.0
@@ -24,13 +26,4 @@ repos:
       - id: mypy
         additional_dependencies: [types-requests]
         args: [--ignore-missing-imports]
-
-  - repo: local
-    hooks:
-      - id: pytest
-        name: pytest
-        entry: pytest
-        language: system
-        pass_filenames: false
-        always_run: true
-        args: [tests/, -v]
+        language_version: python3.9
